@@ -82,7 +82,7 @@ public class RSHttp {
                   onResultRunnable(msg.obj);
                   break;
               case FINISH_JOB_FAIL:
-                  onFailRunnable();
+                  onFailRunnable(msg.obj);
                   break;
               case FINISH_JOB_FAIL_RESEND:
                   reSendResource(msg.obj);
@@ -122,6 +122,6 @@ public class RSHttp {
                 }
             }
         }
-        return retVal
+        return retVal;
     }
 }

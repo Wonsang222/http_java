@@ -68,7 +68,7 @@ public abstract class HttpBaseResource {
 
     protected abstract String charSet();
     protected abstract void parsor(InputStream response) throws Exception;
-    public abstract void headParsor(HttpURLConnection conn) throws Exception;
+    public abstract void headerParsor(HttpURLConnection conn) throws Exception;
     public abstract void setParameter(String... param);
 
     public HashMap<String, String> getReqHeaders(){
